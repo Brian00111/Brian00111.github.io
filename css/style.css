@@ -29,20 +29,18 @@
     left: 0;
     height: 80px;
     width: 100%;
-    transition: all 400ms;
-    z-index: 5000
+    transition: all 1s;
+    z-index: 5000;
+    padding-top: .5rem;
 }
 .header .logo {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding-right: 0.5em;
-    display: block;
     font-size: 2em;
     margin-top: 0;
     font-family: 'Hind Siliguri', sans-serif;
     color: #f1f1f1;
-    z-index: 1000
+    float: right;
+    position: relative;
+    z-index: 6000;
 }
 .header .logo h1 {
     line-height: 0.8;
@@ -95,7 +93,8 @@
 .header.shrink {
     height: 80px;
     background: #06021c;
-    box-shadow: 0 3px 10px 0 #262525e6
+    box-shadow: 0 3px 10px 0 #262525e6;
+    padding: 0 2.5rem;
 }
 .main {
     width: 100%;
@@ -180,11 +179,11 @@
     color: #000
 }
 .main .content--present {
-    padding-top: 2rem
+    padding-top: 5rem
 }
 @media screen and (min-width: 831px) {
     .main .content--present {
-        padding-top: 5rem
+        padding: 5rem 3rem;
     }
 }
 .main .content--present .present1 {
@@ -384,15 +383,15 @@
     left: -35px;
     right: 0;
     margin: auto;
-    width: 50px;
-    height: 50px
+    width: 30px;
+    height: 30px
 }
 .main .content--portfolio .portfolio .proyect .menu::after {
     position: absolute;
     top: 0;
     content: "";
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background: #333;
     border-radius: 100%
 }
@@ -408,10 +407,10 @@
 }
 .main .content--portfolio .portfolio .proyect .menu .plus-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 70%;
     color: #f1f2f2;
-    font-size: 3.5em;
+    font-size: 2.9em;
     transform: rotate(90deg);
     transition: transform 500ms;
     z-index: 1
