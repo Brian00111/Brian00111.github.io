@@ -31,7 +31,7 @@
     width: 100%;
     transition: all 1s;
     z-index: 5000;
-    padding: 1rem .5rem 0 .5rem;
+    padding: 1.5rem .5rem 0 .5rem;
 }
 .header .logo {
     font-size: 2em;
@@ -91,7 +91,7 @@
     color: #f39422
 }
 .header.shrink {
-    height: 80px;
+    height: 90px;
     background: #06021c;
     box-shadow: 0 3px 10px 0 #262525e6;
 }
@@ -512,20 +512,26 @@
     position: relative;
     max-width: 70%;
 	height: auto;  
-    background-image: url("../img/mypicture.jpg");
-    background-size: cover;
     margin: auto;
 }
 
-.main .content--aboutme .aboutme-part1 .content-about .my-picture {
-    border: 3px solid #fff;
-    width: 100%;
-    min-width: 29vmax;
-    max-width: 27vmin
+.main .content--aboutme .aboutme-part1 .content-about-img .box-img {
+    position: absolute;
+    top: 0;
+    width:100px;
 }
+.main .content--aboutme .aboutme-part1 .content-about-img .box-img .ilus-astro {
+    position: absolute;
+    bottom: -80px;
+    left: -60px;
+    max-width: 10vw;
+    min-width: 160px;
+}
+
 @media screen and (min-width: 1029px) {
     .main .content--aboutme .aboutme-part1 {
         max-width: 510px;
+        margin-right: 3%;
     }
     .main .content--aboutme .aboutme-part1 .content-about-img{
        max-width: 85%; 
@@ -591,14 +597,14 @@
     padding-bottom: 15rem
 }
 
-.main .content--skills .cube__porcentaje {
+.main .content--skills .cube__habilidades {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-top: 2rem
 }
-.main .content--skills .cube__porcentaje .container-cube-all {
+.main .content--skills .cube__habilidades .container-cube-all {
     max-width: 30%;
     width: 100%;
     height: calc(var(--height) * 1.2);
@@ -606,20 +612,20 @@
     justify-content: center;
     margin: 2rem
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube {
     display: flex;
     perspective: 1000px;
     margin: auto;
     justify-content: center
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .cube {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .cube {
     transform: rotateY(45deg);
     height: var(--height);
     width: var(--width);
     transform-style: preserve-3d;
     animation: rot 20s linear infinite
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .cube .cube__face {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .cube .cube__face {
     position: absolute;
     height: var(--height);
     width: var(--width);
@@ -630,54 +636,54 @@
     border: 5px solid #2c80d4;
     font-family: "Poppins Medium", sans-serif
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .cube .cube__face .icon-skill {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .cube .cube__face .icon-skill {
     width: 80%;
     margin: 0px auto
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .cube .cube__face .skill-tt {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .cube .cube__face .skill-tt {
     margin: 0 auto;
     font-size: 1.7em;
     font-family: 'Hind Siliguri', sans-serif;
     font-weight: 600;
     letter-spacing: 2px
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .cube .enfrente .icon-skill {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .cube .enfrente .icon-skill {
     width: 60%;
     margin-top: 5%
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .enfrente {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .enfrente {
     transform: translateZ(var(--trans-p))
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .enfrente h2 {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .enfrente h2 {
     margin-top: 7%;
     color: #EFD81D
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .atras {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .atras {
     transform: translateZ(var(--trans-n))
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .atras h2 {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .atras h2 {
     color: #2173F7
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .arriba {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .arriba {
     transform: translateY(var(--trans-n)) rotateX(90deg)
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .abajo {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .abajo {
     transform: translateY(var(--trans-p)) rotateX(90deg)
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .izquierda {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .izquierda {
     transform: translateX(var(--trans-n)) rotateY(90deg)
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .izquierda h2 {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .izquierda h2 {
     color: #b33718
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .atras *,
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .izquierda * {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .atras *,
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .izquierda * {
     transform: rotateY(180deg)
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .derecha {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .derecha {
     transform: translateX(var(--trans-p)) rotateY(90deg)
 }
-.main .content--skills .cube__porcentaje .container-cube-all .container-cube .derecha h2 {
+.main .content--skills .cube__habilidades .container-cube-all .container-cube .derecha h2 {
     margin-top: 10%;
     color: #CF649A
 }
@@ -689,77 +695,33 @@
         transform: rotateY(360deg)
     }
 }
-.main .content--skills .cube__porcentaje .container-porcentaje {
-    max-width: 400px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 2rem 1.5rem;
-    width: 100%
-}
-@media screen and (min-width: 1200px) {
-    .main .content--skills .cube__porcentaje .container-porcentaje {
-        max-width: 450px
-    }
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje {
+
+
+.habilidades-b{
     display: flex;
-    justify-content: center
+    justify-content: space-evenly;
+    margin: 0 6%;
 }
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .logo-porcentaje {
-    width: 5rem
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .logo-porcentaje .icon-porcentaje {
-    max-width: 90%
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .logo-porcentaje .html,
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .logo-porcentaje .css {
-    max-width: 120%;
-    width: 120%;
-    margin-left: -12px
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .cc-p {
-    display: flex;
-    flex-direction: column;
-    max-width: 77%;
-    width: 100%
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .cc-p .porcentaje-title {
+.title-blandas{
+    text-align:center;
+    font-size: calc(1.5em + 1.1vw);
+    margin: auto;
+    margin-bottom: 3rem;
+    max-width: 1100px;
+    font-family: 'Hind Siliguri', sans-serif;
     font-weight: 600;
     color: #d9d8d8;
-    font-size: 1.3em
+    padding-left: 1rem;
+    padding-top: 3rem;
+    font-variant: all-petite-caps;
+
 }
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .cc-p .porcentaje-title span {
-    font-weight: 100;
-    font-size: .7em;
-    color: #a29c9c
+    
+.h-blandas {
+    max-width: 150px;
+    margin: 0 1rem;
 }
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .cc-p .barra {
-    width: 100%;
-    height: 15px;
-    background: #ece7e7;
-    border-radius: 0px 10px 10px 0px;
-    margin-top: .5rem;
-    position: relative;
-    box-shadow: 0 0 10px 4px rgba(153, 149, 149, 0.5)
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .cc-p .barra:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 15px;
-    width: 50%;
-    border-radius: 0 10px 10px 0;
-    background: linear-gradient(to right, #c33764, #1d2671)
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .cc-p .barraht::before {
-    width: 80%
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .cc-p .barracs::before {
-    width: 90%
-}
-.main .content--skills .cube__porcentaje .container-porcentaje .porcentaje .cc-p .barras::before {
-    width: 50%
-}
+
 .footer {
     display: flex;
     flex-direction: column;
