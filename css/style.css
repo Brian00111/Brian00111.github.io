@@ -700,7 +700,9 @@
 .habilidades-b{
     display: flex;
     justify-content: space-evenly;
-    margin: 0 6%;
+    padding: 0 5%;
+    align-items: center;
+    width:100%;
 }
 .title-blandas{
     text-align:center;
@@ -720,6 +722,13 @@
 .h-blandas {
     max-width: 150px;
     margin: 0 1rem;
+    position:relative;
+    text-align: center;
+}
+.h-b-title{
+    font: size 1.2em;
+    color:#dbdbdb;
+    padding-top:.5rem;
 }
 
 .footer {
