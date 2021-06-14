@@ -705,8 +705,8 @@
     width:100%;
 }
 .title-blandas{
-    text-align:center;
-    font-size: calc(1.5em + 1.1vw);
+    text-align:left;
+    font-size: calc(1.4em + 0.9vw);
     margin: auto;
     margin-bottom: 3rem;
     max-width: 1100px;
@@ -741,7 +741,8 @@
 }
 .footer .title-contact {
     font-family: 'Hind Siliguri', sans-serif;
-    font-size: calc(2.3em + 1.5vw);
+    font-size: calc(1.5em + 0.9vw);
+    padding-top:1rem;
     font-weight: 600;
     color: #d9d8d8;
     font-variant: all-petite-caps
@@ -750,19 +751,29 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 2rem;
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
     justify-content: space-around;
-    color: #d9d8d8
+    color: #d9d8d8;
+    align-items: center;
 }
 .footer .contact .contact-section {
-    padding: 1rem
+    padding: 1rem;
+    width:auto;
+    text-align:center;
 }
+@media screen and (min-width: 680px){
+    .footer .contact .contact-section {
+        width:300px;
+    }
+}
+
 .footer .contact .contact-section .title-contact-section {
     font-weight: 600;
-    font-size: 1.1em;
-    padding-bottom: .5em
+    font-size: 2.1em;
+    padding-bottom: 0.7em;
+    text-align: center;
 }
 .footer .contact .contact-section ul li {
     font-size: 1.1em;
@@ -776,6 +787,14 @@
 }
 .footer .contact .contact-section .social:hover {
     color: #f39422
+}
+.footer .dates{
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 0;
+    color: #c1bebe;
+    font-size: 0.95em;
+    background: #000106;
 }
 .portfolio,
 .about {
