@@ -5,6 +5,7 @@ let menu=document.getElementById('menu_nav');
 let menuLinks=document.querySelectorAll('#menu_nav a');
 let menuBtn=document.getElementById('menu_ham');
 let skillsBtn=document.getElementById('btn-skills');
+let buscador=document.querySelectorAll('#search a');
 
 let contentImg=document.getElementById('content-img');
 
@@ -34,6 +35,20 @@ $(window).scroll(function() {
       $('header').removeClass('shrink');
     }
 });
+
+buscador.forEach(e=>{
+let proyect=document.querySelector('.proyect');
+
+    e.addEventListener('click',e=>{
+        e.preventDefault();
+        let dataId=e.target.getAttribute('data-id')
+        
+        switch(dataId){
+            
+        }
+     
+    })
+})
 
 
 document.getElementById('menu1').addEventListener('click',e=>{
@@ -83,29 +98,34 @@ sr.reveal('.rocket',{
     origin: 'left',
     distance: '-200px'
 })
+
 sr.reveal('.services-comet',{
     duration:3000,
     origin: 'left',
     distance: '-200px'
 })
+
 sr.reveal('.container-cube',{
     duration:3100,
     origin: 'top',
     distance: '100px'
     
 })
+
 sr.reveal('.container-porcentaje',{
     duration:3100,
     origin: 'top',
     distance: '100px'
     
 })
+
 sr.reveal('.proyect-1',{
     duration:3000,
     origin: 'rigth',
     distance: '100px'
     
 })
+
 sr.reveal('.proyect-2',{
     duration:3000,
     origin: 'left',

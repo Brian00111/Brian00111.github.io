@@ -182,7 +182,7 @@
 }
 @media screen and (min-width: 831px) {
     .main .content--present {
-        padding: 5rem 3rem;
+        padding: 10rem 3rem;
     }
 }
 .main .content--present .present1 {
@@ -344,7 +344,7 @@
     background: #04e2f2;
     color: #282727
 }
-.main .content--portfolio .portfolio {
+.main .content--portfolio .portfolio .grid-portfolio{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     transition: all 500ms;
@@ -352,6 +352,18 @@
     z-index: 1000;
     position: relative
 }
+.main .content--portfolio .portfolio #search {
+    display: flex;
+    justify-content: center;
+}
+.main .content--portfolio .portfolio #search a {
+    color: #ffff;
+    padding: 0 0.8em;
+}
+.main .content--portfolio .portfolio #search a:hover {
+    text-decoration:underline;
+}
+
 .main .content--portfolio .portfolio .proyect {
     border-radius: 5px;
     background: #f2f2f2;
@@ -375,17 +387,29 @@
 /*
 NUEVOS PROYECTOS
 */
-.main .content--portfolio .portfolio .proyect-1 .content-img {
+.main .content--portfolio .portfolio .grid-portfolio .p-page:nth-child(1) .content-img {
     background: url("../img/portfolio-img.png");
     background-size: cover;
     background-position-x: 25%
 }
-.main .content--portfolio .portfolio .proyect-2 .content-img {
+.main .content--portfolio .portfolio .grid-portfolio .p-page:nth-child(2) .content-img {
     background: url("../img/proyect-1.png");
     background-size: cover;
     background-position-x: 25%
 }
 
+.main .content--portfolio .portfolio .grid-portfolio .p-js:nth-child(3) .content-img {
+    background: url("../img/autos.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.main .content--portfolio .portfolio .grid-portfolio .p-js:nth-child(4) .content-img {
+    background: url("../img/localstorage.png");
+    background-size: cover;
+    background-position: center;
+
+}
 
 
 .main .content--portfolio .portfolio .proyect .menu {
